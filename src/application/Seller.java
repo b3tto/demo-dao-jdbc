@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-import modules.entities.Department;
+import model.entities.Department;
 
 public class Seller implements Serializable {
 

@@ -2,7 +2,7 @@ package application;
 
 import java.util.Date;
 
-import modules.entities.Department;
+import model.entities.Department;
 
 public class Program {
 

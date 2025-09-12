@@ -25,12 +25,30 @@ public class Program2 {
 		System.out.println("Inserted departmentId id = " + dep.getId());
 		*/
 		
-		
+		/*
 		System.out.println("====== TEST 2: findAll department ======");
 		list = departmentDao.findAll();
 		for (Department dep : list) {
 			System.out.println(dep);
 		}
+		*/
+		
+		
+		System.out.println("====== TEST 3: Update department ======");
+		System.out.print("Entry with name for updating: ");
+		String name = sc.next();
+		List<Department> list1 = new ArrayList<>();
+		list1 = departmentDao.findAll();
+		for (Department dep : list1) {
+			if (name.equals(dep.getName())) {
+				Integer id = dep.getId();
+				System.out.print("Enter with new name: ");
+				String newName = sc.next();
+				Department department = new Department(id, newName);
+				departmentDao.update(department);
+			}
+		}
+		System.out.println("Name entered do not exists.");
 	}
 
 }

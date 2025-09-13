@@ -51,11 +51,20 @@ public class Program2 {
 		System.out.println("Name entered do not exists.");
 		*/
 		
+		/*
 		System.out.println("====== TEST 4: findById department ======");
 		System.out.print("Insert the id for search? ");
 		Integer id = sc.nextInt();
 		Department department = departmentDao.findById(id);
 		System.out.println(department);
+		*/
+		
+		
+		System.out.println("====== TEST 5: deleteById department ======");
+		System.out.print("Enter with Id for delete: ");
+		int id = sc.nextInt();
+		departmentDao.deleteById(id);
+		System.out.println("Delete completed");
 		
 	}
 

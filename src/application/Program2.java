@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
@@ -60,11 +62,24 @@ public class Program2 {
 		*/
 		
 		
-		System.out.println("====== TEST 5: deleteById department ======");
+		/*System.out.println("====== TEST 5: deleteById department ======");
 		System.out.print("Enter with Id for delete: ");
 		int id = sc.nextInt();
 		departmentDao.deleteById(id);
-		System.out.println("Delete completed");
+		System.out.println("Delete completed");*/
+		
+		int b,c,d;
+		char a;
+		a = '2';
+		b = a*a;
+		c = b - a;
+		d = 2*a*(2 + c * (b - 10));
+		a = (int) b;
+		b = a + b;
+		c = (d - 10);
+		d = (c - b) -  (a + d) * b;
+		System.out.println("d =" + d);
+		
 		
 	}
 
